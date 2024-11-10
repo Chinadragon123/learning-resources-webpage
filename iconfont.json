@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "582095",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "22014981",
+      "name": "压缩文件-zip_rar_7z",
+      "font_class": "yasuowenjian-zip_rar_7z",
+      "unicode": "e6f1",
+      "unicode_decimal": 59121
+    },
+    {
+      "icon_id": "35585499",
+      "name": "光盘",
+      "font_class": "guangpan",
+      "unicode": "e748",
+      "unicode_decimal": 59208
+    },
+    {
+      "icon_id": "40098145",
+      "name": "014_记录",
+      "font_class": "a-014_jilu",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "40098188",
+      "name": "014_下载",
+      "font_class": "a-014_xiazai",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    }
+  ]
+}

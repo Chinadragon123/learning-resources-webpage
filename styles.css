@@ -1,0 +1,194 @@
+/* 导航栏部分 */
+/* -----基础样式----- */
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #bdfff1, #ff9595);
+}
+
+.nav {
+    width: 1200px;
+    height: 70px;
+    position: relative;
+    top: 0;
+    margin-top: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: #fff;
+}
+.nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 5%;
+}
+.nav ul .nav-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc((100% / 6)*1);
+    height: 10px;
+    border-radius: 5px;
+    transition: .5s;
+}
+.nav ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.nav ul li a {
+    color: rgb(70, 100, 180);
+    font: 100 30px '得意黑 斜体';
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    transition: .2s;
+}
+.nav ul li a:hover {
+    color: #ffbe33;
+}
+.nav ul li:nth-child(1):hover~.nav-box {
+    left: calc(100% / 6 * 0);
+    background-color: #f15f3a;
+}
+.nav ul li:nth-child(2):hover~.nav-box {
+    left: calc(100% / 6 * 1);
+    background-color: #46a2e0;
+}
+.nav ul li:nth-child(3):hover~.nav-box {
+    left: calc(100% / 6 * 2);
+    background-color: #e7b74e;
+}
+.nav ul li:nth-child(4):hover~.nav-box {
+    left: calc(100% / 6 * 3);
+    background-color: #1012a0;
+}
+.nav ul li:nth-child(5):hover~.nav-box {
+    left: calc(100% / 6 * 4);
+    background-color: #288b7e;
+}
+.nav ul li:nth-child(6):hover~.nav-box {
+    left: calc(100% / 6 * 5);
+    background-color: #7e7e7e;
+}
+
+/* 正文样式 */
+.introduce_part {
+    position: relative;
+}
+
+.introduce {
+    margin-top: 15%;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #4ccf68, #57a3c7); /* 设置渐变色 */
+    background-clip: initial;
+    -webkit-background-clip: text; /* 背景裁剪至文本 */
+    -webkit-text-fill-color: transparent; /* 文本填充颜色透明 */
+    font-size: 80px; /* 根据需要调整字体大小 */
+    font-family: '得意黑 斜体'; /* 使用你所需的字体 */
+}
+
+.introduce::selection {
+    color: #ffffff00;
+}
+
+/* 正文第二样式 */
+.introduce2 {
+    margin-top: 15%;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    background: linear-gradient(to right, #4ccf68, #57a3c7); /* 设置渐变色 */
+    background-clip: initial;
+    -webkit-background-clip: text; /* 背景裁剪至文本 */
+    -webkit-text-fill-color: transparent; /* 文本填充颜色透明 */
+    font-size: 40px; /* 根据需要调整字体大小 */
+}
+
+.introduce2::selection {
+    color: #ffffff00;
+}
+
+
+
+/* 按钮样式 */
+.resource_button {
+    margin-left: 20px;
+    padding: 12px 24px; /* 内边距 */
+    background-color: #f5fff9; /* 背景颜色 */
+    color: #4d4d4d; /* 字体颜色 */
+    border: none; /* 去掉边框 */
+    border-radius: 25px; /* 圆角 */
+    font-size: 26px; /* 字体大小 */
+    font-weight: 500; /* 字体加粗 */
+    text-align: center; /* 文本居中 */
+    cursor: pointer; /* 鼠标悬停时显示手形光标 */
+    transition: background-color 0.3s, transform 0.2s; /* 过渡效果 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 阴影 */
+}
+
+.resource_button:hover {
+    background-color: #d6ffe9; /* 悬停时改变背景颜色 */
+    transform: translateY(-5px); /* 悬停时微微上移 */
+}
+
+.resource_button:active {
+    transform: translateY(3px); /* 按下时下移，给人压力感 */
+}
+
+.back-button {
+    position: fixed; /* 固定定位 */
+    top: 20px; /* 距离顶部20像素 */
+    left: 20px; /* 距离左边20像素 */
+    padding: 10px 15px; /* 内边距 */
+    background-color: #fff1b3; /* 背景颜色 */
+    color: #333333; /* 字体颜色 */
+    border: none; /* 去掉边框 */
+    border-radius: 5px; /* 圆角 */
+    text-decoration: none; /* 去掉下划线 */
+    font-size: 16px; /* 字体大小 */
+    transition: background-color 0.3s; /* 背景颜色过渡效果 */
+}
+
+.back-button:hover {
+    background-color: #d8cc97; /* 悬停时改变背景颜色 */
+}
+
+.download-button {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px; /* 内边距 */
+    margin-top: 15px; /* 上边距 */
+    background-color: #a9ff98; /* 背景颜色 */
+    color: #030303; /* 字体颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    border-radius: 5px; /* 圆角 */
+    font-size: 16px; /* 字体大小 */
+    transition: 0.3s; /* 颜色过渡效果 */
+}
+
+.download-button:hover {
+    background-color: #6ad19e; /* 悬停时改变背景颜色 */
+    color: #fcfcfc;
+}
+
+
+/* 在线字体 */
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: "得意黑 斜体";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/yn8Ne9Zng6GL/yExPGtq5uaiX.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/yn8Ne9Zng6GL/OzSkRP2wsWHX.woff") format("woff");
+    font-display: swap;
+  }
